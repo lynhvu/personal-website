@@ -1,72 +1,34 @@
 body {
     color: #394a55;
     margin: 0;
-}
-
-
-/*
-.nav {
-    position: relative;
-    display: inline-flex; /* good 
-    overflow: hidden;
-    background-color: transparent;
-    font-family: lato, sans-serif;
-    align-items: center;
-    
-}
-
-.nav a {
-    
-    color: #394a55;
-    font-family: lato, sans-serif;
-    text-align: center;
-    padding: 1rem 2rem 1.15rem;
-    text-decoration: none;
-    font-size: 17px;
   
-    
-    position: relative;
-    left: 50%;
-    
-   
 }
 
-.nav a:hover {
-    background-color: #2f3635;
-    color: #788e94;
-    
+h1 {
+    font-size: x-large;
+    text-align: center;
 }
 
-.nav a.active {
-    background-color: darkgray;
-    color: black;
+p.intro {
+    text-align: justify;
+    font-size: large;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 30px;
 }
 
-
-ul {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+p.list {
+    text-align: left;
+    font-size: large;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 30px;
 }
-
-li {
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
-    position: relative;
-    display: block;
-    
-}
-*/
-
 
 /* Position the navbar container inside the image */
 .container {
     position: absolute;
     width: 100%;
-    
 }
   
   /* The navbar */
@@ -78,14 +40,12 @@ li {
     width: 100%; 
     flex-wrap: wrap;
 }
-
-  
   
   /* Navbar links */
 .topnav a {
     float: left;
     display: inline-block;
-    font-family: roboto, sans-serif;
+    
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
@@ -100,7 +60,7 @@ li {
 
 .topnav-right {
     float: right;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .topnav a:hover {
@@ -113,23 +73,11 @@ li {
     color: #212b34;
 }
 
-@media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left; /* If you want the text to be left-aligned on small screens */
-    }
-    .topnav-right {
-        float: right;
-    }
-}
-
-/* */
 .home-theme {
     height: 100%;
     min-height: 550px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/lynhvu/personal-website/blob/main/img/wallpaper.jpg?raw=true');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    , url('https://github.com/lynhvu/personal-website/blob/main/img/wallpaper.jpg?raw=true');
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -147,14 +95,90 @@ li {
 }
 .top-intro {
     color: whitesmoke;
-    font-family: Rubik,sans-serif;
+   
     font-size: xxx-large;
 }
 
-.sections {
-    font-family: elianto, sans-serif;
+.sec-about {
     font-size: xx-large;
-    text-align: center;
+    text-align: left;
     color: #212b34;
     padding-top: 15px;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+}
+
+.section-head {
+    text-align: center;
+    font-size: xx-large;
+    text-transform: capitalize;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    width: 20%;
+    float: left;
+    margin-left: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.bg-light {
+    background-color: #ecf1f1;
+}
+
+.bg-dark {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.ft {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+}
+.topnav-right {
+    float: right;
+}
+.column {
+    width: 100%;
+    }
 }
